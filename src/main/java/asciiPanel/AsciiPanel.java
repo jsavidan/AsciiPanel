@@ -207,6 +207,17 @@ public class AsciiPanel extends JPanel {
     }
 
     /**
+     * Returns the character currently displayed at the specified x and y position. The origin (0,0) is the upper left corner.
+     * The x should be equal to or greater than 0 and less than the the width in characters.
+     * The y should be equal to or greater than 0 and less than the the height in characters.
+     * @param x the distance from the left the character should be read from
+     * @param y the distance from the top the character should bre read from
+     */
+    public char getCharacter(int x, int y) {
+        return chars[x][y];
+    }
+
+    /**
      * Gets the default background color that is used when writing new text.
      * @return
      */
